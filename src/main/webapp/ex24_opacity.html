@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>opacity : 불투명도</title>
+<style type="text/css">
+	div.bg{
+		background-image: url(images/sea.jpg);
+		border: 2px solid black;
+		background-size: 100% 100%;
+	}
+	div.msg{
+		margin:30px;
+		background-color: #fff;
+		border: 1px solid black;
+		opacity: 0.6;
+	}
+	
+	div.msg p{
+		margin: 5%;
+		font-weight: bold;
+		color: #000000;
+		text-align: center;
+	}
+</style>
+
+</head>
+<body>
+	<div class="bg">
+		<div class="msg">
+			<p>div 안에 존재하는 글자 입니다. 불투명도를 넣어준 박스</p>
+		</div>
+	</div>
+</body>
+</html>

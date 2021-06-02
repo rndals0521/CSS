@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>margin : 밖여백</title>
+<style type="text/css">
+	div{
+		border: 1px solid black;
+	}
+	
+	.box1{ background-color: skyblue; text-align: center; margin: 0px;}
+	div.box2{ 
+		background-color: silver; 
+		width:200px; 
+		text-align: center; 
+		margin: 10px auto; /* 좌우가 auto이면 가운데 정렬  */}
+	div#box3{ 
+		background-color: gold; 
+		width:200px; 
+		height:50px;
+		text-align:center; 
+		margin: 10px auto;
+		overflow: hidden; /* 영역을 벗어난 자식은 숨겨라  */
+	}
+	p.box4{ 
+		background-color: silver; 
+		width:500px;
+	}
+</style>
+</head>
+<body>
+<!-- margin: 숫자,					: 상하좌우 전체 바깥 여백
+	 margin: 숫자1 숫자2				: 숫자1(상하), 숫자2(좌우) 바깥 여백 
+	 margin: 숫자1 숫자2 숫자3 숫자4		: 숫자1(상), 숫자2(우), 숫자3(하), 숫자4(좌) 바깥 여백
+ -->
+ 	<h2>margin 연습</h2>
+ 	<div class="box1">margin연습	margin연습	margin연습</div>
+ 	<div class="box2">margin연습	margin연습	margin연습</div>
+ 	<div id="box3">
+ 		<p class="box4">margin연습	margin연습	margin연습	margin연습	margin연습</p>
+ 	</div>
+</body>
+</html>

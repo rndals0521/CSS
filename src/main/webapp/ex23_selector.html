@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	p{font-size:20px; margin:0px;padding:10px;}
+	p:first-child{ color:red;}
+	p:nth-child(2){color:orange;}
+	p:nth-child(3){color:yellow;}
+	p:nth-child(4){color:green;}
+	p:nth-child(5){color:blue;}
+	p:nth-child(6){color:navy;}
+	p:last-child{color:purple;}
+	p:nth-child(odd){background-color:black;}
+	p:nth-child(even){background-color:black;}
+	p:nth-last-child(even){font-size:30px;}
+</style>
+</head>
+<body>
+	<!-- 
+		:first-child : 형제관계중 첫번째 위치하는 태그
+		:last-child : 형제관계중 마지막 위치하는 태그
+		:nth-first-child(수열) : 형제관계 중 앞에서 수열번째에 태그 선택
+		:nth-last-child(수열) : 형제관계 중 뒤에서 수열번째에 태그 선택
+		** 수열 대신 even는 짝수, odd는 홀수,
+		   2n+1
+	 -->
+	 
+	 <p>this is some text.</p>
+	 <p>this is some text.</p>
+	 <p>this is some text.</p>
+	 <p>this is some text.</p>
+	 <p>this is some text.</p>
+	 <p>this is some text.</p>
+	 <p>this is some text.</p>
+
+</body>
+</html>

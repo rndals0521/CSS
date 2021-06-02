@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vertical menu</title>
+<style type="text/css">
+	* {margin: 0; padding: 0;}
+	ul{
+		list-style-type: none;
+		width: 25%;
+		background-color: #f1f1f1;
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+
+	}
+	li a{
+		display: block;
+		color: black;
+		padding: 8px 16px;
+		text-decoration:none;
+	}
+	li a.active{
+		background-color: #04aa6d;
+		color:white;
+	}
+	
+	li a:hover{
+		background-color: #555;
+		color: white;
+	}
+	
+	div.contents{
+		background-color: skyblue;
+		height: 80%;
+		width: 75%;
+		position: fixed;
+		margin-left:25%;
+		padding: 1px 16px;
+	}
+	div.footer{
+		background-color: black;
+		width: 75%;
+		height: 20%;
+		right:0;
+		bottom:0;
+		margin-left: 25%;
+		margin-top: 80%;
+		position: fixed;
+		
+	}
+	div#p1{color:white;}
+	
+</style>
+
+</head>
+<body>
+	<ul>
+		<li><a class="active">Home</a></li>
+		<li><a>News</a></li>
+		<li><a>Contact</a></li>
+		<li><a>About</a></li>
+	</ul>
+	<div class="contents">
+		<h2>수직 메뉴 연습</h2>
+		<p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+		<p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+		<p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+	</div>
+	<div class="footer">
+		<div id="p1">
+		<h2>footer</h2>
+		<p>footer</p><p>.</p><p>.</p><p>.</p><p>.</p>
+		<p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+		</div>
+	</div>
+</body>
+</html>

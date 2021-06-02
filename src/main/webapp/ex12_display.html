@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	* {margin:0px; color:white;}
+	div#box1{
+		background-color: green;
+		border: 1px solid black;
+		width: 500px;
+		height: 50px;
+		line-height: 50px;
+		box-sizing: border-box;
+		text-align:center;
+	}
+	
+	div#box2{
+		border: 1px solid black;
+		background-color: green;
+		width: 500px;
+		height: 180px;
+		line-height:90px;
+		text-align:center;
+		box-sizing: border-box;
+		display: none;
+	}
+</style>
+<script type="text/javascript">
+	function show(){
+		
+		document.getElementById("box2").style.display="block";
+	}
+</script>
+</head>
+<body>
+	<!-- 화면 제어하기 위한 중요한 CSS 속성 -->
+	<!-- display는 block,inline,none,table, inline-block 
+		 display : none 은 영역 자체가 없어진다.
+		 visibility : hidden 은 영역은 그대로 남아있는다.
+	-->
+
+	<div id="box1" onclick="show()">아래 div를 보려면 클릭하세요</div>
+	<div id="box2">
+		<p>해당 div를 숨기려면 display:none<br>
+		   해당 div를 보이려면 display:block</p>
+	</div>
+	<hr>
+	
+	
+</body>
+</html>

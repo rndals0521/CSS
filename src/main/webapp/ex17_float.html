@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>clearfix</title>
+<style type="text/css">
+	div{
+		width: 500px;
+		border: 3px solid green;
+		padding: 5px;
+	}
+	#img1{
+		float: left;
+		margin-right:5px;
+	}
+	#fix{
+		overflow: auto;
+	}
+	#img2{
+		float: left;
+		margin-right: 10px;
+	}
+	#clear{
+		clear: left;
+	}
+	hr{clear: both;}
+	
+</style>
+</head>
+<body>
+<!-- 부모태그에 자식태그를 고정시킨다. -->
+<h2> clear fix를 안한 경우</h2>
+<div class="clearfix">
+	<img id="img1" alt="" src="images/img_chania.jpg" style= "width:150px;">
+	<p> clearfix를 안한 경우는 부모 태그의 영역을 벗어나도 일반적으로 표현.
+		clearfix를 안한 경우는 부모 태그의 영역을 벗어나도 일반적으로 표현.</p>
+</div>
+<hr>
+
+<h2 id="clear"> clear fix를 한 경우</h2>
+<div id="fix">
+	<img id="img2" alt="" src="images/img_chania.jpg" style="width:150px;">
+	<p> clearfix를 안한 경우는 부모 태그의 영역을 벗어나도 일반적으로 표현.
+		clearfix를 안한 경우는 부모 태그의 영역을 벗어나도 일반적으로 표현.</p>
+</div>
+
+
+</body>
+</html>
